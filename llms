@@ -1,0 +1,19 @@
+#!/usr/bin/perl -w
+
+use LLMs;
+
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (Name => "LLMs",
+   ReceiveHandler => \&Receive);
+$UNIVERSAL::llms = LLMs->new();
+
+sub Receive {
+  my %args = @_;
+  $UNIVERSAL::llms->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::llms->Execute();

@@ -1,0 +1,27 @@
+1. Enhance productivity requirements system
+2. Improve focus on impact
+3. Create clear goals and milestones
+4. Set aside dedicated time for focused work
+5. Seek support from like-minded individuals or groups
+6. Celebrate achievements and progress
+7. Stay motivated with visualization of success
+8. Patience and persistence in the face of setbacks
+9. Continuous learning to improve skills and knowledge
+10. Remember "why" for tasks
+
+In regards to productivity requirements, there are a few sub-tasks that need attention:
+
+* Fixing the system for asserting and retracting world state
+* Prioritizing tasks based on urgency and importance
+
+Additionally, there are some general tasks related to improving overall productivity:
+
+* Configuring the system after boot up with settings such as throttling video card usage
+* Implementing a history mechanism for buffers in FLP
+* Developing a severe weather alert component
+* Merging meal planner code with top-down planning system
+* Creating a system to record food intake and manage daily chores
+* Implementing the PDDL planner for food inventory management
+* Setting up OpenAI GPT-4 API and interface
+* Building a multi-purpose classifier for various tasks
+* Work on financial decision support system

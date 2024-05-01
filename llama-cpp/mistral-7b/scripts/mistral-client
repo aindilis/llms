@@ -1,0 +1,59 @@
+#!/usr/bin/env perl
+
+use lib "/var/lib/myfrdcsa/codebases/minor/code-llama-frdcsa/scripts/old";
+
+use BOSS::Config;
+use System::Mistral;
+
+use Data::Dumper;
+use File::Slurp;
+
+$specification = q(
+	-q <query>	Query
+	-m <n>		Max tokens
+
+	-c		Print only the content, not the rest of the response.
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+my $mistral = Mistral->new();
+
+if (! exists $conf->{'-q'}) {
+  die "Please supply -q query argument.\n";
+}
+my $query = $conf->{'-q'};
+print Dumper({Query => $query});
+my $maxtokens = $conf->{'-n'};
+
+my $filename = $query;
+$filename =~ s/\W/_/sg;
+$filename = substr($filename,0,100);
+$filename .= ".txt";
+
+my $prompt = "<s>[INST]$query [/INST]";
+
+### Response:";
+
+
+my $result = $mistral->Query
+  (
+   Prompt => $prompt,
+   MaxTokens => $maxtokens,
+  );
+
+# print $fullfilename."\n\n";
+
+if ($conf->{'-c'}) {
+  print $result->{Result}{content}."\n";
+} else {
+  print Dumper($result);
+}
+
+# save the input and output
+my $fullfilename = '/home/andrewdo/mistral-output/'.$filename;
+write_file($fullfilename,$result->{Result}{choices}[0]{message}{content});

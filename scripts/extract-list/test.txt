@@ -1,0 +1,28 @@
+Here's a summary of your task list:
+
+1. Fix productivity_requirements.pl script: Add features to determine priority and urgency of recent tasks in a given to-do file. Enable a stop marker or specify the number of most recent tasks to jog memory.
+2. Implement an integrated search function that searches all FLP source code areas (Prolog, MVC, templates, etc.) for specific keywords or terms.
+3. Develop a nagging reminder system that repeatedly tries and gives up at a certain time to remind you of upcoming important dates or recurrences.
+4. Update the FLC meal planner with new pest control domains and ensure the use of PDDL+ planners on them.
+5. Improve debugging by configuring your system after boot-up, including throttling the video card.
+6. Coordinate the development of a secondary meal planning/caloriesingle domain to merge with existing bottom-up planning code and run regression tests.
+7. Refactor the PDDL meal planner code and make it more generic and easier to edit. Add to it daily-chores.
+8. Investigate using a generative AI to take stock of situations and predict correct responses, similar to proof by exhaustion in chess.
+9. Work on automatic inventory reordering, etc.
+10. Develop a system for recording what was eaten.
+11. Implement the PDDL planner for food inventory, merging it with the previous planner system.
+12. Rehabiliate the existing codebase and potentially rewrite parts of it.
+13. Work on the installer for FRDCSA, using marelle-type syntax.
+14. Configure an automatic configuration management system that can handle isa relationships between objects.
+15. Develop a 'whatIf' module to test different scenarios and their potential outcomes.
+16. Use machine learning algorithms like GANs to generate realistic images or videos from text descriptions.
+17. Work on AI for a month, focusing on natural language processing (NLP) tasks such as named entity recognition, sentiment analysis, chatbots, etc.
+18. Read and analyze your to-do lists to prioritize and plan accordingly.
+19. Modify the flp and free-life-planner.jason repo to fix any issues that may have occurred.
+20. Autodetect misbehavior like a shell-run from Jason and modify the FLP script as needed.
+21. Develop an expert system to determine when it is appropriate for individuals to distract each other, incorporating FLP's setMode stuff and creating a web interface.
+22. Create a code autocomplete tool using Emacs and Miai.
+23. Work on financial tasks, releasing the project, and setting up the installer.
+24. Continue working on financial planning and decision support systems.
+
+Remember to prioritize your tasks based on their importance, urgency, and impact. Regularly revisit this list and adjust as needed to maintain a productive workflow.',
